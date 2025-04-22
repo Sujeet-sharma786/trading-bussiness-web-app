@@ -1,0 +1,256 @@
+/* CSS resets  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display: flex;
+    position: sticky;
+    
+    top: 0px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#logo{
+   height: 100px;
+   width: 100px;
+}
+#navbar #logo img{
+    height: 100px;
+    width: 100px;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Great Vibes', cursive;
+}
+
+
+#navbar ul .item{
+    list-style: none;
+    font-size: 3rem;
+}
+#navbar ul .item a{
+    color: white;
+    display: block;
+    padding: 4px 7px;
+    border-radius: 25px;
+    margin: 2px 23px;
+   
+    text-decoration: none;
+    /* font-size: 25px; */
+    
+}
+#navbar ul .item a:hover{
+    color: black;
+    background-color: white;
+    
+}
+/* section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 484px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#home::before{
+    content: " ";
+    position: absolute;
+    background:url("../agt-bg-img2.jpg") no-repeat center center/cover;
+    height: 615px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+.text-overlay {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5); /* translucent dark box */
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .text-overlay p{
+    color: #FFFFFF;
+  font-size: 1.5rem;
+  /* font-family: 'Lobster', cursive; */
+  }
+#home h1{
+    color: 	#361212;
+    text-align: center;
+    font-family:'Abril Fatface', cursive;
+}
+
+/* services section  */
+/* #services-container{
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+#services-container h1{
+    font-size: 50px;
+} */
+#services{
+    margin: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+   
+}
+#services .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   
+    border: 2px solid brown;
+    padding: 34px;
+    border-radius: 28px;
+    background: #d6d0d0;
+    margin: 25px 25px;
+    height: 250px;
+    width: 250px;
+    box-shadow:-16px -16px lightgreen;
+}
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Lobster', cursive;
+    font-size: 1.23rem;
+}
+
+/* Client Section  */
+#client-section{
+    height: 344px;
+
+}
+#client-section::before{
+    content: " ";
+    position: absolute;
+    background:url("../bg.jpg");
+    height: 340px;
+   
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+#clients{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+
+
+    
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 124px;
+}
+/* contact section  */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+    background: url("/contact-bg-image.jpg") no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 9px;
+
+
+}
+#contact-box .btn1{
+    background-color: brown;
+    width: 103%;
+    border-radius: 13px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Lobster', cursive;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* utility class */
+.h-primary{
+    font-size: 3rem;
+    text-align: center;
+    padding: 12px;
+    font-family:'Abril Fatface', cursive;
+}
+.h-secondary-center{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family:'Abril Fatface', cursive;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    padding: 6px 20px;
+    margin-top: 15px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
